@@ -1,65 +1,27 @@
 name: choco
 description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.2
+  sdk: ">=3.0.0 <4.0.0"
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
- 
-
   flutter:
     sdk: flutter
-  dependencies:
-  url_launcher: ^6.1.7  # немесе соңғы нұсқасы
-  http: ^1.2.0
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  # 📦 Пакеттер
+  url_launcher: ^6.1.7
+  http: ^1.2.0
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^5.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
   assets:
@@ -67,34 +29,58 @@ flutter:
     - assets/cake_bg.jpg
     - assets/donut_bottom_right.png
     - assets/donut_top_left.png
-
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+    - assets/special_offer_image_1.png
+    - assets/special_offer_image_2.png
+    - assets/product_1.png
+    - assets/product_2.png
+    - assets/product_3.png
+    - assets/product_4.png
+    - assets/advertisement_banner.png
+    - assets/tort_snikers.png
+    - assets/tort_napoleon.png
+    - assets/bento_dr.png
+    - assets/bento_friend.png
+    - assets/bento_love.png
+    - assets/bento_minimalizm.png
+    - assets/bento_morkovnyy.png
+    - assets/bento_redvelvet.png
+    - assets/bento_shokolad.png
+    - assets/bento_surprise.png
+    - assets/bento_tropiki.png
+    - assets/macarons_fistashka.png
+    - assets/macarons_lavanda.png
+    - assets/macarons_limon.png
+    - assets/macarons_malina.png
+    - assets/macarons_mango.png
+    - assets/macarons_premium.png
+    - assets/macarons_shokolad.png
+    - assets/macarons_karamel.png
+    - assets/macarons_kofe.png
+    - assets/napitki_amerikano.png
+    - assets/napitki_ayslatte.png
+    - assets/napitki_goryachiy_shokolad.png
+    - assets/napitki_kapuchino.png
+    - assets/napitki_milksheyik.png
+    - assets/napitki_mohito.png
+    - assets/napitki_sok_apelsin.png
+    - assets/napitki_sok_vishnya.png
+    - assets/pirojnoe_banan.png
+    - assets/pirojnoe_kartoshka.png
+    - assets/pirojnoe_maffin_chernika.png
+    - assets/pirojnoe_muraveynik.png
+    - assets/pirojnoe_pavlova.png
+    - assets/pirojnoe_redvelvet.png
+    - assets/pirojnoe_trishokolada.png
+    - assets/pirojnoe_trubochka.png
+    - assets/tort_morkovnyy.png
+    - assets/tort_praga.png
+    - assets/tort_ptichyemoloko.png
+    - assets/tort_tiramisu.png
+    - assets/vypechka_kish.png
+    - assets/vypechka_kruassan.png
+    - assets/vypechka_mak.png
+    - assets/vypechka_pirog_vishnya.png
+    - assets/vypechka_ponchik.png
+    - assets/vypechka_sinnabon.png
+    - assets/vypechka_sochnik.png
+    - assets/vypechka_sosiska.png

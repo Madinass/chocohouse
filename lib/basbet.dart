@@ -9,19 +9,18 @@ class BasBet extends StatelessWidget {
       backgroundColor: Colors.transparent, 
       body: Stack(
         children: [
-          // 🖼 Артқы фон суреті
           Container(
             width: double.infinity,
             height: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/cake_bg.jpg'), // Сіздің торт суретіңіз
+                image: AssetImage('assets/cake_bg.jpg'), 
                 fit: BoxFit.cover,
               ),
             ),
           ),
 
-          // 🌟 Жұмсақ градиенттік фильтр (төменнен жоғарыға қаралайды)
+          
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -36,19 +35,17 @@ class BasBet extends StatelessWidget {
             ),
           ),
 
-          // 📝 Мазмұн
           SafeArea( 
-            // 📌 Өзгеріс: Горизонталды padding сақтап, жоғарғы padding-ті 15.0-ге орнаттық
+            
             child: Padding(
               padding: const EdgeInsets.only(
-                top: 15.0, // Логотипті сәл төмен түсіру үшін
+                top: 15.0, 
                 left: 25.0, 
                 right: 25.0,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // 🧁 Логотип және атау 
+                children: [ 
                   Row(
                     children: [
                       const Icon(Icons.cake_outlined, color: Colors.white, size: 30), 
@@ -67,14 +64,11 @@ class BasBet extends StatelessWidget {
                       ),
                     ],
                   ),
-
-                  // Мәтінді сәл жоғары жылжыту үшін аралықты кішірейтеміз
                   const SizedBox(height: 100), 
 
-                  // 🍰 Орталық жазу
                   const Center(
                     child: Text(
-                      'Торт — это как объятие,\nтолько со сливочным кремом.',
+                      'Жизнь слишком коротка,\nчтобы есть плохой торт!',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
@@ -95,7 +89,6 @@ class BasBet extends StatelessWidget {
 
                   const Spacer(), 
 
-                  // 🔘 Батырмалар (Төменгі бөлікте)
                   Column(
                     children: [
                       _AuthButton(
